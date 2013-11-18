@@ -4,8 +4,6 @@ module BLACK_LIST;
 
 export {
         redef enum Notice::Type += {
-                ## A lookup for a domain name listed in the
-                ## `Appendix D (Digital) - FQDNs.txt` file was seen.
                 BLACK_LIST::Domain_Hit,
                 
         };
