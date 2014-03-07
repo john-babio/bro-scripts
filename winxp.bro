@@ -1,4 +1,4 @@
-xport {
+export {
 	redef enum Notice::Type += {	
 		Windows_XP::FOUND
 		};
