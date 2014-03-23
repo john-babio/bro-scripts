@@ -25,6 +25,5 @@ You can cron the malwaredomains.sh to pull down the updated list of domains. Jus
 
 <h1>Output will generate</h1>
 
-BLACK_LIST::Domain_Hit
 
 
