@@ -1,5 +1,5 @@
 #!/bin/bash
-# This is the inteldata.bro file to be places inside a folder /usr/local/bro/share/bro/inteldata
+# This is the inteldata.bro file to be placed inside folder /usr/local/bro/share/bro/inteldata
 #
 # @load policy/frameworks/intel/seen
 # @load frameworks/intel/do_notice
