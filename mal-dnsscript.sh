@@ -4,7 +4,9 @@
 # @load policy/frameworks/intel/seen
 # @load frameworks/intel/do_notice
 #
-#
+# redef Notice::type_suppression_intervals += {
+#        [Intel::Notice] = 1day,
+# };
 #
 # redef Intel::read_files += {
 #        @DIR + "/baddns.intel",
