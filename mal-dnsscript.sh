@@ -13,7 +13,7 @@
 #        @DIR + "/badips.intel",
 # };
 # #
-# This to be places in local.bro 
+# This to be placed in local.bro 
 # @load inteldata/inteldata
 ##
 # It is also assumed you have the mal-dnssearch script install from "https://github.com/jonschipp/mal-dnssearch"
