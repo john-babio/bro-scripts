@@ -62,8 +62,5 @@ rm botcc.rules
 rm tor.rules
 rm ip-filter.blf
 
-mv baddns.intel /usr/local/bro/share/bro/inteldata
-mv badips.intel /usr/local/bro/share/bro/inteldata
-
 #This is a script I created to restart bro
 /etc/start-bro.sh
