@@ -15,3 +15,4 @@ $msg=fmt("Abnormal DNS Request for: %s", query),
 $identifier=cat(query)]);
         }
 }
+
