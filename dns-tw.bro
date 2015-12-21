@@ -1,4 +1,4 @@
-xport {
+export {
         redef enum Notice::Type += {
         Abnormal_DNS_Request::FOUND
         };
