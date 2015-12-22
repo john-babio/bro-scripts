@@ -1,18 +1,17 @@
 export {
-        redef enum Notice::Type += {
-        Abnormal_DNS_Request::FOUND
-        };
+	redef enum Notice::Type += {
+	Interesting_DNS_Request::FOUND
+	};
 }
 
 
 event dns_request(c: connection , msg: dns_msg , query: string , qtype: count , qclass: count )
 {
-local dns_pattern = /.*\.tw/;
+local dns_pattern = /.*\.tw|.*\.cn|.*\.kr|.*\.kp|.*\.jp|.*\.sg|.*\.asia/;
 if ( query == dns_pattern ) {
-NOTICE([$note=Abnormal_DNS_Request::FOUND,
+NOTICE([$note=Interesting_DNS_Request::FOUND,
 $conn=c,
-$msg=fmt("Abnormal DNS Request for: %s", query),
+$msg=fmt("Interesting DNS Request for: %s", query),
 $identifier=cat(query)]);
-        }
-}
-
+	}
+} 
